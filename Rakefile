@@ -6,7 +6,7 @@ require "pdfkit"
 task :default => ['show']
 
 task :show => [:build] do
-	sh 'open build/*.pdf'
+	sh 'xdg-open build/*.pdf'
 end
 
 task :build do
@@ -44,7 +44,7 @@ def add_divs (html)
 end
 
 def to_pdf (src, out)
-	PDFKit.new(File.new(src), 'lowquality' => true, 'margin-left' => '1.2cm', 'margin-right' => '1.2cm', 'margin-top' => '1.2cm', 'margin-bottom' => '1.2cm').to_file(out)
+	PDFKit.new(File.new(src), 'lowquality' => true, 'margin-left' => '1.2cm', 'margin-right' => '1.2cm', 'margin-top' => '1.2cm', 'margin-bottom' => '1.2cm', 'encoding' => 'UTF-8').to_file(out)
 	puts "#{src} => #{out}"
 end
 

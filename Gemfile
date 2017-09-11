@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 gem "rake"
 gem "github-markdown"
+gem "redcarpet"
 gem "guard-rake"
 gem "slim"
 gem "pdfkit"
