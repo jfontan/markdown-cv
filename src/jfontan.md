@@ -13,7 +13,27 @@ I'm an energetic geek that likes to tinker with technology. Since young I found 
 
 ## Experience
 
-**2010-NOW - Founder/Engineer, OpenNebula Systems, Madrid, Spain**
+**2019 - Lead Software Developer, Source{d}, Madrid, Spain**
+
+The data retrieval team was split in two at the start of 2019 and I was appointed lead if it. We had to implement new tools to download and archive git repositories in a more efficient way. These are the projects we've been working on:
+
+* go-borges: Git storage layer that supports transactions, snapshots and repository deduplication. This was used by both the downloader and the git repository processor. This layer made possible to update repositories while they were being processed and stored repository forks in an efficient way transparent to software using it. https://github.com/src-d/go-borges
+* gitcollector: Software to download all repositories from GitHub organizations. It uses go-borges as its storage layer and detects forks using the initial commit. For repository discovery it uses the GitHub API to retrieve the list of all the organization repositories. https://github.com/src-d/gitcollector
+* data-retrieval: Spiced up version of gitcollector. This is a client / server application that can be deployed in several computers to download repositories. It is meant to be used with several big organizations. It does data distribution between nodes and disks and maintains snapshots of updates to be able to access data in a coherent way. This project is private to the company.
+
+**2017-2018 - Senior Software Developer, Source{d}, Madrid, Spain**
+
+As a member of data retrieval team I helped maintaining and creating several projects to download and extract insights from a pool of git repositories. Part of my duties were improving performance to some of our software. Some projects I've been involved in:
+
+* go-git: Library to deal with git repositories. https://github.com/src-d/go-git
+* borges: Tool to download and archive public repositories. https://github.com/src-d/borges
+* gitbase: SQL interface to git repositories. https://github.com/src-d/gitbase
+* go-billy: Filesystem abstraction. https://github.com/src-d/go-billy
+* go-billy-siva: Filesystem over an append only archive, used to store repositories. https://github.com/src-d/go-billy-siva
+
+Aside from the pure development work I've been helping on setting to work them in production in our Kubernetes infrastructure.
+
+**2010-2017 - Founder/Engineer, OpenNebula Systems, Madrid, Spain**
 
 I am one of the founders of the OpenNebula Systems Company. This company develops and gives commercial support for OpenNebula Open Source project. This is a small company and I have a wide spectrum of roles:
 
@@ -30,7 +50,7 @@ I am one of the founders of the OpenNebula Systems Company. This company develop
   * Jenkins jobs configuration
   * Glue scripts to spin up micro environments where to run tests
   * Ansible playbooks to configure the micro environments
-* Installation of OpenNebula in customer's infraestructure
+* Installation of OpenNebula in customer's infrastructure
 * Provide support in the customer's ticketing systems
 * Give tutorials and speeches to customers or the community
 * Community engaging
@@ -70,11 +90,11 @@ Started programming Basic in a Spectrum at the age of 9 and later in Pascal and 
 ## Skills
 
 * Programming:
+  * Go
   * Ruby
-  * C/C++
   * Shell Scripting
 * System Administration level in Linux
-* Ansible
+* Basic Kubernetes usage and Helm charts creation
 * Languages:
   * Galician - Native
   * Spanish - Native
