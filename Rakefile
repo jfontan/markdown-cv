@@ -1,5 +1,4 @@
 require 'rake'
-# require "github/markdown"
 require "redcarpet"
 require "slim"
 require "pdfkit"
