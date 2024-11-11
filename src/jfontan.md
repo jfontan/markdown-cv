@@ -5,10 +5,10 @@
 
 * **Birth date**: August 7th, 1979
 * **Email**: jfontan@gmail.com
-* **GitHub**: jfontan
+* **GitHub**: [https://github.com/jfontan](https://github.com/jfontan)
 * **Path**: /Spain/Madrid
 
-I'm an energetic geek that likes to tinker with technology. Since young I found that I liked graphics programming but as time went by I moved to systems. I love automating things and creating tools to manage them. Also there is a lot of interest on system internals and Open Source.
+I'm an energetic geek that likes to tinker with technology. Since young I found that I liked graphics programming but as time went by I moved to systems. I love automating things and creating tools to manage them. I also have a lot of interest on system internals and Open Source.
 
 
 ## Experience
@@ -98,7 +98,7 @@ Contracted by a European Funded research project called EGEE (Enabling Grids for
 
 **2001-2004 - Systems Technician, CESGA, Santiago de Compostela, Spain**
 
-My roles at CESGA (Galicia Supercomputing Center) were maintaining UNIX clusters used for Scientific research and helping the rest of the technical staff with Linux and programming matters. During my stay there I supervised the rendering of a CGI film, started a protein visualization program using OpenGL, optimizing of applications for speed, Systems Administration and R&D in Grid technologies. I also took part in a european funded grid project called CrossGrid where we worked on making interactive and parallel programs run in grid environment where I assisted and participated in various conferences and work meetings.
+My roles at CESGA (Galicia Supercomputing Center) were maintaining UNIX clusters used for Scientific research and helping the rest of the technical staff with Linux and programming matters. During my stay there I supervised the rendering of a CGI film, started a protein visualization program using OpenGL, optimizing of applications for speed, Systems Administration and R&D in Grid technologies. I also took part in a European funded grid project called CrossGrid where we worked on making interactive and parallel programs run in grid environment where I assisted and participated in various conferences and work meetings.
 
 
 ## Education
@@ -133,9 +133,13 @@ Started programming Basic in a Spectrum at the age of 9 and later in Pascal and 
 
 * Server code for [glslsandbox](http://glslsandbox.com/). A shading language editor and gallery.
 
+* [jerror](https://github.com/jfontan/jerror) is a Go library to help create errors that contain stack trace and data that can help find problems.
+
+* [go-jdeque](https://github.com/jfontan/go-jdeque) is a Go deque library that uses chunks to improve speed and memory consumption.
+
 
 ## Hobbies
 
-* I am now learning go and crystal as I want to go back to lower level systems programming. These last years I've been mainly using ruby and shell script glue code.
+* Music is one of my main hobbies. Finding new music and going to shows.
 
-* From 1995 to 2005 I've been into the [demoscene](https://en.wikipedia.org/wiki/Demoscene) as programmer and musician. I did a lot of graphics programming but the part that I liked the most was programming low level: at first doing libraries to interact with the peripherals like graphics or sound cards and later doing asm optimization.
+* From 1995 to 2005 I've been into the [demoscene](https://en.wikipedia.org/wiki/Demoscene) as programmer and musician. I did a lot of graphics programming but the part that I liked the most was programming low level: at first doing libraries to interact with the peripherals like graphics or sound cards and later doing assembler optimization.
