@@ -1,5 +1,6 @@
 require 'rake'
-require "github/markdown"
+# require "github/markdown"
+require "redcarpet"
 require "slim"
 require "pdfkit"
 
@@ -12,7 +13,7 @@ end
 task :build do
 	rmtree 'build'
 	mkdir_p 'build'
-	
+
 	FileList['src/*.md'].each do |src|
 		html_filename = out_filename(src, 'html')
 		pdf_filename = out_filename(src, 'pdf')
@@ -28,7 +29,9 @@ end
 
 def to_html (src, out)
 	source = File.read(src)
-	content = add_divs(GitHub::Markdown.render_gfm(source))
+	html = Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(source)
+	content = add_divs(html)
+	# content = add_divs(GitHub::Markdown.render_gfm(source))
 	output = template('base', content)
 
 	File.open(out,'w') {|file| file.puts output}
@@ -44,11 +47,10 @@ def add_divs (html)
 end
 
 def to_pdf (src, out)
-	PDFKit.new(File.new(src), 'lowquality' => true, 'margin-left' => '1.2cm', 'margin-right' => '1.2cm', 'margin-top' => '1.2cm', 'margin-bottom' => '1.2cm', 'encoding' => 'UTF-8').to_file(out)
+	PDFKit.new(File.new(src), 'lowquality' => true, 'margin-left' => '1.2cm', 'margin-right' => '1.2cm', 'margin-top' => '1.2cm', 'margin-bottom' => '1.2cm', 'encoding' => 'UTF-8', 'enable-local-file-access' => true).to_file(out)
 	puts "#{src} => #{out}"
 end
 
 def template(tpl, content)
 	Slim::Template.new("templates/" + tpl+'.slim').render(Object.new, :content => content)
 end
-
