@@ -3,7 +3,7 @@ require "redcarpet"
 require "slim"
 require "pdfkit"
 
-task :default => ['show']
+task :default => ['build']
 
 task :show => [:build] do
 	sh 'xdg-open build/*.pdf'
