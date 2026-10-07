@@ -13,9 +13,34 @@ I am an old sysadmin turned into a developer. Started managing compute clusters,
 
 ## Experience
 
+**September 2025 - present - CrowdStrike**
+
+Onum Technologies was bought by CrowdStrike and we continued working on the Onum product integrating it in CrowdStrike ecosystem:
+
+* Designed the building blocks in the processing platform to save ingestion checkpoints
+* Optimization of processes an ingestion integrations
+* Implemented new authentication methods for HTTP clients
+* Improved Parquet generation from senders
+
+**May 2025 - August 2025 - Onum Technologies**
+
+This company created a data platform to ingest, process and send events in nearly real time. I worked in the services that ingested and processed these events:
+
+* Optimized ingestion integrations for speed and memory
+* Implemented a generic HTTP REST integration client
+* Improved CI and build processes
+* Optimized S3 integration to ingest JSON data
+
+**May 2024 - April 2025 - Career break**
+
+Made a break to work on side projects and do contract work.
+
+* Helped maintain the infrastructure to retrieve data git repositories in Remotely Works.
+* Development of physical games for a escape room style company. Developed screens rendered with ebiten game framework that were displayed in the game rooms. One of the games is [Bombastik](https://madrid.bombastik.games/).
+
 **March 2020 - April 2024 - Software Engineer, Remotely Works**
 
-This company approached me to help them create a system to gather information from developer from Git repositories. With my colleagues we have created a system that:
+This company approached me to help them create a system to gather information from developer from Git repositories. With my partners we have created a system that:
 
 * Downloads all the public repositories from GitHub, GitLab and Bitbucket.
 * Extracts license information from the repositories.
